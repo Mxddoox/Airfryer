@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirFryer Token</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r146/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>AirFryer Token</h1>
+      <p>The tastiest meme coin in the crypto world! 🍟🔥</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#game">AirFryer Game</a>
+        <a href="#metrics">Token Metrics</a>
+        <a href="#buy">Buy Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Welcome to the AirFryer Revolution!</h2>
+      <p>Cook up some fun and join the tastiest crypto community.</p>
+      <button onclick="window.location.href='#buy'">Get AirFryer Tokens</button>
+    </div>
+    <canvas id="3d-animation"></canvas>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About AirFryer Token</h2>
+      <p>AirFryer Token (AirFryer) is the ultimate meme coin for foodies and crypto enthusiasts. Join the revolution and cook up some fun!</p>
+      <div class="card-container">
+        <div class="card">
+          <h3>🍟 Delicious</h3>
+          <p>Our token is as tasty as your favorite fries.</p>
+        </div>
+        <div class="card">
+          <h3>🔥 Hot & Fresh</h3>
+          <p>Always fresh out of the crypto oven.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 To the Moon</h3>
+          <p>Join the journey to the moon and beyond!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="game">
+    <div class="container">
+      <h2>AirFryer Game</h2>
+      <p>Put your favorite foods in the air fryer and see what happens!</p>
+      <div class="game-container">
+        <div id="airfryer">
+          <img src="airfryer.png" alt="Air Fryer" id="airfryer-image">
+          <div id="food-slot"></div>
+        </div>
+        <div id="food-options">
+          <button onclick="cook('fries')">🍟 Fries</button>
+          <button onclick="cook('chicken')">🍗 Chicken</button>
+          <button onclick="cook('pizza')">🍕 Pizza</button>
+          <button onclick="cook('broccoli')">🥦 Broccoli</button>
+        </div>
+        <div id="result"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="metrics">
+    <div class="container">
+      <h2>Token Metrics</h2>
+      <p>Check out the latest stats for AirFryer Token.</p>
+      <div class="chart-container">
+        <canvas id="tokenChart"></canvas>
+      </div>
+      <div class="dex-links">
+        <a href="https://dexscreener.com" target="_blank">View on DexScreener</a>
+        <a href="https://pump.fun" target="_blank">View on Pump.fun</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy">
+    <div class="container">
+      <h2>Buy AirFryer Token</h2>
+      <p>Get your hands on the tastiest crypto in the world!</p>
+      <button onclick="window.location.href='https://example.com/buy'">Buy Now</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 AirFryer Token. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
